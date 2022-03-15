@@ -11,15 +11,17 @@ package queuemanager;
  * using their getItem() or getPriority() methods.
  * 
  * This is an example of Java's poor implementation getting in the way. Java
- * fanboys will no doubt explain at length why it has to be this way, but note
+ * fanboys will no doubt  explain at length why it has to be this way, but note
  * that Eiffel allows it because Eiffel generics were done right from the start,
- * rather than being tacked on as an afterthought and limited by issues of
- * backward compatibility. Humph!
+ * rather than being tacked on as' an afterthought and limited by issues of
+ * backward compatibility. Humph
+ *!
  * 
  * @param <T> The type of things being stored.
  */
+
 public class SortedArrayPriorityQueue<T> implements PriorityQueue<T> {
-    
+
     /**
      * Where the data is actually stored.
      */
@@ -47,6 +49,10 @@ public class SortedArrayPriorityQueue<T> implements PriorityQueue<T> {
         capacity = size;
         tailIndex = -1;
     }
+
+
+
+
 
     @Override
     public T head() throws QueueUnderflowException {
